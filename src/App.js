@@ -8,6 +8,7 @@ import { DeveloperConsole } from './substrate-lib/components';
 import AccountSelector from './AccountSelector';
 import Blockinfo from './Blockinfo';
 import Multisig from './Multisig';
+import Event from './Event';
 
 function Main () {
   const [accountAddress, setAccountAddress] = useState(null);
@@ -56,6 +57,9 @@ function Main () {
           </Grid.Row>   
           <Grid.Row stretched>            
             <Multisig accountPair={accountPair} />
+          </Grid.Row>          
+          <Grid.Row stretched>            
+            <Event />
           </Grid.Row>          
         </Grid>
       </Container>
